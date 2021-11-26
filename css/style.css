@@ -1,0 +1,63 @@
+@import './header.css';
+@import './main.css';
+@import './section-imc.css';
+:root {
+  --cor-geral: #008024;
+  --cor-0: #ffffff;
+  --cor-font: #4F4F4F;
+  --cor-fig: #929292;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: var(--cor-font);
+  border: none;
+}
+body {
+  background-color: #F9F9F9;
+}
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.verde {
+  color: var(--cor-geral);
+}
+p {
+  font-size: 1.125rem;
+  font-family: 'Roboto';
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+p:last-child {
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 1.875rem;
+  font-family: 'Poppins';
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 30px;
+}
+h2::before {
+  content: " ";
+  width: 5px;
+  height: 35px;
+  background-color: var(--cor-geral);
+  position: absolute;
+  left: -30px;
+}
+figcaption {
+  color: var(--cor-fig);
+  font-size: 0.85rem;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10px;
+}
+blockquote {
+  font-family: 'Poppins', sans-serif;
+  color: var(--cor-fig);
+  line-height: 1.5;
+}
