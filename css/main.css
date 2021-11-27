@@ -23,7 +23,7 @@
 @media (max-width: 600px) {
   .main {
     gap: 50px;
-    padding: 50px 30px;
+    padding: 50px 50px;
   }
   .main-texto h2 {
     font-size: 1.5rem;
@@ -32,6 +32,9 @@
   .main-texto p {
     font-size: 0.9rem;
     margin-bottom: 20px;
+  }
+  h2::before {
+    left: -10px;
   }
 }
 @media (max-width: 450px) {

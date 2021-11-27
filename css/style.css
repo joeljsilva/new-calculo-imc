@@ -1,11 +1,14 @@
 @import './header.css';
 @import './main.css';
 @import './section-imc.css';
+@import './imc-calc.css';
+@import './footer.css';
 :root {
   --cor-geral: #008024;
   --cor-0: #ffffff;
   --cor-font: #4F4F4F;
   --cor-fig: #929292;
+  --cor-bg2: ;
 }
 * {
   margin: 0px;
@@ -60,4 +63,10 @@ blockquote {
   font-family: 'Poppins', sans-serif;
   color: var(--cor-fig);
   line-height: 1.5;
+  padding-bottom: 20px;
 }
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+}
+
+

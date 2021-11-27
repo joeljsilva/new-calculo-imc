@@ -83,14 +83,14 @@ blockquote {
 @media (max-width: 600px) {
   .section {
     gap: 50px;
-    padding: 50px 30px;
+    padding: 50px 60px;
   }
-  .section,
+  .section h2,
   .indice-imc h2 {
     font-size: 1.5rem;
 
   }
-  .section,
+  .section p,
   .indice-imc p
   ,blockquote {
     font-size: 0.9rem;

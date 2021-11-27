@@ -19,19 +19,19 @@
       <span class="header-logo"><a href="#">MaisSaúde</a></span>
       <nav>
         <ul class="header-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sobre o IMC</a></li>
-          <li><a href="#">Calcule seu IMC</a></li>
+          <li><a href="#main">Home</a></li>
+          <li><a href="#sobreimc">Sobre o IMC</a></li>
+          <li><a href="#calc-imc-bg">Calcule seu IMC</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <!--Banner-->
   <div class="banner">
-    <h1>Cuidar da sua saúde<br> e bem-estar também<br> é se <span class="barra">amar</span><span class="ponto">.</span></h1>
+    <h1>Cuidar da sua saúde<br> e bem-estar também<br> é se <span class="barra">amar</span><span class="verde">.</span></h1>
   </div>
   <!--Main Conteudo-->
-  <main class="main container">
+  <main class="main container" id="main">
     <div class="main-texto">
       <h2>A importância de manter um peso ideal</h2>
       <p>A busca por um corpo perfeito está sendo cada vez maior, tanto por homens quanto por mulheres. Podemos observar um crescimento expansivo na quantidade de academias e de comércio de alimentos saudáveis. Mas, você sabe qual é a importância de manter o peso ideal?
@@ -41,14 +41,14 @@
     <img src="imgs/undraw_bic.svg" alt="Mulher andando em uma bicicleta">
   </main>
   <!--Section IMC Infos-->
-  <div class="bg-gradient container"></div>
+  <div class="bg-gradient container" id="sobreimc"></div>
   <section class="section container">
     <div class="imc-infos">
       <h2>Mas afinal, oque é IMC ?</h2>
       <p>O <span class="verde">índice de massa corporal (IMC)</span> é uma medida internacional usada para calcular se uma pessoa está no peso ideal. Desenvolvido pelo polímata Lambert Quételet no fim do século XIX, trata-se de um método fácil e rápido para a avaliação do nível de gordura de cada pessoa, sendo, por isso, um preditor internacional de obesidade adotado pela Organização Mundial da Saúde (OMS).</p>
       <h2>Como calcular</h2>
       <p>O IMC é determinado pela divisão da massa do indivíduo pelo quadrado de sua altura, em que a massa está em quilogramas e a altura em metros.</p>
-      <a href="#"><span>clique aqui</span> para calcular o seu imc !</a>
+      <a href="#calc-imc-bg"><span>clique aqui</span> para calcular o seu imc !</a>
       <figure class="imc-calculo">
         <img src="imgs/calculo-imc.svg" alt="Calculo IMC">
         <figcaption>Calculo do IMC.</figcaption>
@@ -59,6 +59,7 @@
       <figcaption>Tabela com os dados do resultado.</figcaption>
     </figure>
   </section>
+  <!--Segunda parte section infos-->
   <section class="indice-imc container">
     <h2>Índice considerado ideal</h2>
     <p>Para adultos, um IMC entre 20 e 22 indica a quantidade ideal, saudável de gordura corporal, o que está associado com maior tempo de vida e menor incidência de doenças graves. Coincidentemente, essa relação é o que muitas pessoas consideram ser «o mais esteticamente atraente». Entretanto, é importante ressaltar que um índice entre 22 e 25 também é considerado um intervalo bastante aceitável, pois está igualmente associado à boa saúde.
@@ -67,6 +68,46 @@
     </p>
     <blockquote>«Tanto para mulheres como para homens, a melhor taxa de sobrevivência aparece nos grupos de pessoas cujo IMC está entre 23 e 25. O risco relativo aumenta para pessoas com números mais altos ou mais baixos que esse índice massa corporal tido como “mais seguro”.»</blockquote>
   </section>
+  <!--Section do calculo-->
+  <section class="calc-imc-bg container" id="calc-imc-bg">
+    <h1>Calcule o seu IMC</h1>
+    <div class="calc-imc">
+      <div class="calc-calculo">
+        <h2>Digite seus dados abaixo para saber seu IMC.</h2>
+        <form action="#">
+          <div>
+            <label for="peso">Peso</label>
+            <input type="number" name="peso" id="peso" placeholder="Ex: 80" required>
+          </div>
+          <div>
+            <label for="altura">Altura</label>
+            <input type="number" name="altura" id="altura" placeholder="Ex: 1.80" required>
+          </div>
+          <div>
+            <label for="idade">Idade</label>
+            <input type="number" name="idade" id="idade" placeholder="Ex: 25" required>
+          </div>
+          <button>Calcular</button>
+        </form>
+      </div>
+
+      <div class="calc-resultado">
+        <div class="resulto-final">
+
+        </div>
+        <img src="imgs/undraw-calc.svg" alt="">
+      </div>
+    </div>
+  </section>
+  <!--Rodapé-->
+  <footer class="rodape">
+    <p>Joel J Silva - Todos os direitos reservados.</p>
+    <div class="rodape-redes">
+      <a href="#"><img src="imgs/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="imgs/linkedin.svg" alt="Linkedin"></a>
+      <a href="#"><img src="imgs/github.svg" alt="GitHub"></a>
+    </div>
+  </footer>
 </body>
 
 </html>

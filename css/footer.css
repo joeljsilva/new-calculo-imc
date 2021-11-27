@@ -1,0 +1,22 @@
+.rodape {
+  background-color: var(--cor-geral);
+  text-align: center;
+  padding: 20px;
+}
+.rodape p {
+  color: var(--cor-0);
+  font-size: 1.25rem;
+  font-family: 'Roboto',sans-serif;
+  margin-top: 20px;
+}
+.rodape-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.rodape-redes img {
+  color: var(--cor-0);
+  padding-bottom: 20px;
+  fill: var(--cor-0);
+}
