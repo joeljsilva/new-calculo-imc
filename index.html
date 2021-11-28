@@ -74,21 +74,22 @@
     <div class="calc-imc">
       <div class="calc-calculo">
         <h2>Digite seus dados abaixo para saber seu IMC.</h2>
-        <form action="#">
+        <form action="">
           <div>
             <label for="peso">Peso</label>
             <input type="number" name="peso" id="peso" placeholder="Ex: 80" required>
           </div>
           <div>
             <label for="altura">Altura</label>
-            <input type="number" name="altura" id="altura" placeholder="Ex: 1.80" required>
+            <input type="text" name="altura" id="altura" placeholder="Ex: 1.80" required>
           </div>
           <div>
             <label for="idade">Idade</label>
             <input type="number" name="idade" id="idade" placeholder="Ex: 25" required>
           </div>
-          <button>Calcular</button>
+          <button id="botao">Calcular</button>
         </form>
+        
       </div>
 
       <div class="calc-resultado">
@@ -103,11 +104,12 @@
   <footer class="rodape">
     <p>Joel J Silva - Todos os direitos reservados.</p>
     <div class="rodape-redes">
-      <a href="#"><img src="imgs/facebook.svg" alt="Facebook"></a>
-      <a href="#"><img src="imgs/linkedin.svg" alt="Linkedin"></a>
-      <a href="#"><img src="imgs/github.svg" alt="GitHub"></a>
+      <a href="https://facebook.com/" target="_blank"><img src="imgs/facebook.svg" alt="Facebook"></a>
+      <a href="https://www.linkedin.com/in/joelpjs/" target="_blank"><img src="imgs/linkedin.svg" alt="Linkedin"></a>
+      <a href="https://github.com/joeljsilva" target="_blank"><img src="imgs/github.svg" alt="GitHub"></a>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
