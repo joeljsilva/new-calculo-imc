@@ -74,29 +74,31 @@
     <div class="calc-imc">
       <div class="calc-calculo">
         <h2>Digite seus dados abaixo para saber seu IMC.</h2>
-        <form action="">
+        <div class="form">
           <div>
             <label for="peso">Peso</label>
-            <input type="number" name="peso" id="peso" placeholder="Ex: 80" required>
+            <input type="number" name="peso" id="peso" placeholder="Ex: 80" required="required">
           </div>
           <div>
             <label for="altura">Altura</label>
-            <input type="text" name="altura" id="altura" placeholder="Ex: 1.80" required>
+            <input type="number" name="altura" id="altura" placeholder="Ex: 1.80">
           </div>
           <div>
             <label for="idade">Idade</label>
-            <input type="number" name="idade" id="idade" placeholder="Ex: 25" required>
+            <input type="number" name="idade" id="idade" placeholder="Ex: 25">
           </div>
           <button id="botao">Calcular</button>
-        </form>
-        
+        </div>
       </div>
 
       <div class="calc-resultado">
-        <div class="resulto-final">
-
+        <div class="resultado-final" id="resultado-final">
+          <p>Seu imc é: <span id="resul"></span></p>
+          <p id="resul-detalhe"></p>
         </div>
-        <img src="imgs/undraw-calc.svg" alt="">
+        <div class="calc-img">
+          <img src="imgs/undraw-calc.svg" alt="">
+        </div>
       </div>
     </div>
   </section>

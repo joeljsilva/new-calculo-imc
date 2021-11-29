@@ -22,7 +22,7 @@
   padding: 60px;
   margin-bottom: 60px;
 }
-form {
+.form {
   display: flex;
   align-items: center;
   gap: 50px;
@@ -34,7 +34,7 @@ label {
   color: #C0B8B8;
 }
 input {
-  color: #383838;
+  color: var(--cor-geral);
   background-color: #EFEFEF;
   padding: 12px;
   border-radius: 5px;
@@ -71,13 +71,30 @@ button:active {
 }
 .calc-resultado {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 70px;
 }
-.calc-resultado img {
-  margin: 80px 0px 0px 40px;
+.calc-img img {
+  margin: 20px 0px 0px 40px;
+  padding-top: 20px;
 } 
+
+.resultado-final {
+  display: none;
+  background-color: #ECFDED;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0px 20px 0px;
+}
+#resul {
+  color: var(--cor-geral);
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+#resul-detalhe {
+  font-size: 1rem;
+}
 @media (max-width: 1000px){
   input {
    padding: 8px;
@@ -95,6 +112,19 @@ button:active {
    padding-left: 40px;
    padding-right: 40px;
   }
+  .calc-resultado {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 0px;
+  }
+  .calc-img {
+    margin-top: 0px;
+  }
+  .form {
+    justify-content: space-around;
+  }
 }
 @media (max-width: 750px){
   .calc-imc-bg h1 {
@@ -103,21 +133,19 @@ button:active {
   .calc-calculo h2 {
     font-size: 1.5rem;
   }
-  form {
+  .form {
     flex-direction: column;
-    background-color: #ECFDED;
-    border: 3px solid #ccffcf;
+    background-color: var(--cor-0);
+    border: 3px solid var(--cor-geral);
+    box-shadow: inset 0px 0px 0px 10px #ecfdedd7;
     border-radius: 10px;
-    padding: 20px 0px;
+    padding: 20px;
     gap: 30px;
   }
   input {
-    width: 190px;
-    background-color: var(--cor-0);
+    width: 170px;
+    background-color: #ECFDED;
   }
-  input::placeholder {
-    color: var(--cor-geral);
-   }
    label {
     color: var(--cor-geral);
    }
@@ -126,11 +154,15 @@ button:active {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 30px;
   }
 }
 @media (max-width: 500px){
   input {
-    width: 140px;
+    width: 120px;
+  }
+  .form {
+    padding: 20px;
   }
   .calc-imc-bg h1 {
     font-size: 1.5rem;
@@ -141,5 +173,9 @@ button:active {
   .calc-resultado img {
     width: 200px;
     height: 160px;
+    margin-top: 0px;
+  }
+  #resul-detalhe {
+    font-size: 0.875rem;
   }
 }
