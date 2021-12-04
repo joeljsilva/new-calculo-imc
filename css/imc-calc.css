@@ -137,7 +137,6 @@ button:active {
     flex-direction: column;
     background-color: var(--cor-0);
     border: 3px solid var(--cor-geral);
-    box-shadow: inset 0px 0px 0px 10px #ecfdedd7;
     border-radius: 10px;
     padding: 20px;
     gap: 30px;
