@@ -26,4 +26,22 @@ function calcular() {
 }
 btn.addEventListener("click", calcular)
 
+// Scroll suave
 
+function subirScroll(){
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+function descobrirScroll(){
+  if (window.scrollY === 0){
+    document.querySelector(".scrollbutton").style.display = "none"
+  } else {
+    document.querySelector(".scrollbutton").style.display = "block"
+  }
+}
+
+document.querySelector('.scrollbutton').addEventListener('click', subirScroll)
+
+window.addEventListener('scroll', descobrirScroll)
